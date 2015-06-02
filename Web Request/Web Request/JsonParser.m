@@ -26,10 +26,7 @@
 	{
 		dispatch_sync(dispatch_get_main_queue(), ^{
 
-			if ([NSThread isMainThread])
-			{
-				timer = [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector (action:) userInfo:onTimeIntervalReachesEventHandler repeats: repeats];
-			}
+			timer = [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector (action:) userInfo:onTimeIntervalReachesEventHandler repeats: repeats];
 		});
 	}
 
