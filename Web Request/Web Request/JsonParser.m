@@ -170,7 +170,7 @@ static JsonParser *instance = nil;
 
 		NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:timeoutInterval Target:target Repeats:NO OnTimeIntervalReachesEventHandler:OnTimeIntervalReachesEventHandler];
 
-		dispatch_queue_t queue = dispatch_queue_create ("MutipleThreadsWithAsyncQueue", NULL);
+		dispatch_queue_t queue = dispatch_queue_create ("MultipleThreadsWithAsyncQueue", NULL);
 
 		dispatch_async (queue, ^{
 
